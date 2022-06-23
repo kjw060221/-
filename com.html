@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, intital-scale=1.0">
+        <link rel="stylesheet" href="stily.css">
+        <title>calculator</title>
+        <body>
+          <h1>계산기</h1>  
+          <div class="calculator">
+            <form name="forms">
+                <input type="text" name="output" readonly>
+                <div><input type="button" value="1" onclick="document.forms.output.value+='1'">
+                    <input type="button" value="2" onclick="document.forms.output.value+='2'">
+                    <input type="button" value="3" onclick="document.forms.output.value+='3'">
+                </div>
+                <div><input type="button" value="4" onclick="document.forms.output.value+='4'">
+                    <input type="button" value="5" onclick="document.forms.output.value+='5'">
+                    <input type="button" value="6" onclick="document.forms.output.value+='6'">
+                </div>
+                <div> <input type="button" value="7" onclick="document.forms.output.value+='7'">
+                    <input type="button" value="8" onclick="document.forms.output.value+='8'">
+                    <input type="button" value="9" onclick="document.forms.output.value+='9'">
+                </div>
+               <div><input type="button" value="0" onclick="document.forms.output.value+='0'">
+            </div>
+            <footer> <input type="button" class="operator" value="+" onclick="document.forms.output.value+='+'">
+                <input type="button" class="operator" value="-" onclick="document.forms.output.value+='-'">
+                <input type="button" class="operator" value="*" onclick="document.forms.output.value+='*'">
+                <input type="button" class="operator" value="/" onclick="document.forms.output.value+='/'">
+                <input type="button" class="dot" value="." onclick="document.forms.output.value+='.'">
+                <input type="button" class="clear" value="c" onclick="document.forms.output.value+=''">
+                <div><input type="button" class="operresulttor " value="=" onclick="document.forms.output.value=eval(document.forms.output.value)">   
+                </div>
+             </footer>
+               </form>
+          </div>  
+        </body>
+    </head>
+</html>
